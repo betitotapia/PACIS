@@ -1,0 +1,643 @@
+[16-Aug-2025 07:29:49 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[16-Aug-2025 07:29:49 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[16-Aug-2025 07:29:49 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[16-Aug-2025 07:29:49 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 00:51:32 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 00:51:32 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 00:51:32 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 00:51:32 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:40:58 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:40:58 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:40:58 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:40:58 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:41:26 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:41:26 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:41:26 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:41:26 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:43:45 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:43:45 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[18-Aug-2025 01:43:45 America/Mexico_City] PHP Warning:  Undefined variable $lote in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 109
+[18-Aug-2025 01:43:45 America/Mexico_City] PHP Warning:  Undefined variable $caducidad in /home2/andres58/public_html/sistema/dist/ajax/buscar_productos.php on line 110
+[19-Aug-2025 14:53:50 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/crear_nueva_remision.php on line 12
+[19-Aug-2025 14:53:51 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 14:53:51 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 14:53:51 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 14:53:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:18:56 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:18:56 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:18:56 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:18:56 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:20:13 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:20:13 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:13 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:13 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:20:26 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:20:26 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:26 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:26 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:20:43 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:20:43 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:43 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:20:59 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:20:59 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:20:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:21:29 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:21:29 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:21:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:21:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:21:41 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:21:41 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:21:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:21:41 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:22:01 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:22:01 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:22:01 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:22:01 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[19-Aug-2025 15:22:34 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[19-Aug-2025 15:22:34 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:22:34 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[19-Aug-2025 15:22:34 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 13:23:40 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 13:23:40 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 13:23:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 13:23:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:32:48 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:32:48 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:32:48 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:32:48 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:33:33 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:33:33 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:33 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:33 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:33:37 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:33:37 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:37 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:33:40 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:33:40 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:33:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:34:29 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:34:29 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:34:29 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:34:29 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:34:30 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:34:30 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:34:30 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:34:30 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Undefined variable $simbolo_moneda in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 130
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Undefined variable $simbolo_moneda in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 137
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Undefined variable $simbolo_moneda in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 144
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:41:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:41:04 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:41:04 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:41:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:41:04 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:42:56 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:42:56 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:42:56 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:42:56 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:42:59 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:42:59 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:42:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:42:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:43:03 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:43:03 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:43:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:43:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:43:06 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:43:06 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:43:06 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:43:06 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 21:50:37 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/crear_nueva_remision.php on line 12
+[20-Aug-2025 21:50:38 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 21:50:38 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:50:38 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 21:50:38 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 22:13:46 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 22:13:46 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 22:13:46 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 22:13:46 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[20-Aug-2025 22:13:49 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[20-Aug-2025 22:13:49 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 22:13:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[20-Aug-2025 22:13:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:07:51 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:07:51 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:07:51 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:07:51 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:07:51 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:07:55 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:07:55 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:07:55 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:07:55 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:08:53 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:08:53 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:08:53 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:08:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:08:53 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:08:56 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:08:56 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:08:56 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:08:56 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:00 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:00 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:00 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:00 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:00 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:09:02 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:02 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:02 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:02 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:36 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:36 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:36 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:36 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:36 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:09:37 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:37 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:37 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:37 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:40 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:40 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:40 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:09:41 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:41 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:41 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:09:57 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:09:57 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:09:57 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:57 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:09:57 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:10:03 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:10:03 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:03 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:03 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:10:03 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:10:04 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:10:04 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:04 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:04 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:10:11 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:10:11 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:11 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:10:11 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:11:47 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:11:47 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:11:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:11:47 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:11:47 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:11:49 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:11:49 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:11:49 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:11:49 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:12:14 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:12:14 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:12:14 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:12:14 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:12:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:14:59 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:14:59 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:14:59 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:14:59 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:14:59 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:15:14 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:15:14 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:14 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:14 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:15:41 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:15:41 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:41 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:15:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:15:43 America/Mexico_City] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 2
+[21-Aug-2025 03:15:43 America/Mexico_City] PHP Warning:  Undefined global variable $_SESSION in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:43 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 3
+[21-Aug-2025 03:15:43 America/Mexico_City] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/andres58/public_html/sistema/dist/ajax/productos_remision.php:1) in /home2/andres58/public_html/sistema/dist/ajax/is_logged.php on line 4
+[21-Aug-2025 03:16:26 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:16:33 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:16:36 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:16:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:17:37 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:18:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:18:46 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:18:51 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:21:43 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:21:51 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:22:00 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:22:03 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:22:04 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:25:11 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:25:17 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:25:17 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:25:52 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:25:58 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:27:07 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:27:14 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:27:20 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:27:21 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:27:23 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:29:51 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:29:54 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:31:24 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:31:29 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:33:15 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:93
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(93): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 93
+[21-Aug-2025 03:33:55 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:87
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(87): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 87
+[21-Aug-2025 03:33:59 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:51
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(51): mysqli_query(Object(mysqli), 'INSERT INTO det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 51
+[21-Aug-2025 03:34:06 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:87
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(87): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 87
+[21-Aug-2025 03:34:35 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:87
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(87): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 87
+[21-Aug-2025 03:38:42 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.descripcion' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php:87
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php(87): mysqli_query(Object(mysqli), 'SELECT d.id_det...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/agregar_facturacion.php on line 87
+[28-Aug-2025 16:59:59 America/Mexico_City] PHP Warning:  Undefined array key "hospital_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 8
+[28-Aug-2025 16:59:59 America/Mexico_City] PHP Warning:  Undefined array key "proveedor_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 9
+[28-Aug-2025 16:59:59 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:00:00 America/Mexico_City] PHP Warning:  Undefined array key "hospital_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 8
+[28-Aug-2025 17:00:00 America/Mexico_City] PHP Warning:  Undefined array key "proveedor_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 9
+[28-Aug-2025 17:00:00 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:00:01 America/Mexico_City] PHP Warning:  Undefined array key "hospital_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 8
+[28-Aug-2025 17:00:01 America/Mexico_City] PHP Warning:  Undefined array key "proveedor_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 9
+[28-Aug-2025 17:00:01 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:39 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:42 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:42 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:03:43 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:07:09 America/Mexico_City] PHP Warning:  Undefined array key "hospital_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 8
+[28-Aug-2025 17:07:09 America/Mexico_City] PHP Warning:  Undefined array key "proveedor_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 9
+[28-Aug-2025 17:07:09 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[28-Aug-2025 17:07:10 America/Mexico_City] PHP Warning:  Undefined array key "hospital_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 8
+[28-Aug-2025 17:07:10 America/Mexico_City] PHP Warning:  Undefined array key "proveedor_f" in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 9
+[28-Aug-2025 17:07:10 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[29-Aug-2025 15:05:37 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[29-Aug-2025 15:06:16 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[29-Aug-2025 15:06:18 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[29-Aug-2025 15:07:57 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[29-Aug-2025 15:07:58 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[01-Sep-2025 08:47:13 America/Mexico_City] PHP Warning:  Undefined array key "existencia" in /home2/andres58/public_html/sistema/dist/ajax/editar_productos.php on line 14
+[01-Sep-2025 08:47:25 America/Mexico_City] PHP Warning:  Undefined array key "existencia" in /home2/andres58/public_html/sistema/dist/ajax/editar_productos.php on line 14
+[02-Sep-2025 16:29:33 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:37 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:39 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:39 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:39 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:42 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:42 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:55 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:56 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:29:56 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[02-Sep-2025 16:30:23 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[11-Sep-2025 08:45:32 America/Mexico_City] PHP Warning:  Undefined array key "existencia" in /home2/andres58/public_html/sistema/dist/ajax/editar_productos.php on line 14
+[03-Nov-2025 13:24:05 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'QUIMEDIC RB' for key 'clave' in /home2/andres58/public_html/sistema/dist/ajax/insert_cliente.php:121
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/insert_cliente.php(121): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/insert_cliente.php on line 121
+[03-Nov-2025 13:28:07 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[03-Nov-2025 13:28:49 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[03-Nov-2025 13:29:40 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[03-Nov-2025 13:30:09 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[03-Nov-2025 13:31:49 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[03-Nov-2025 13:31:50 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'proveedor' in 'field list' in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php:40
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php(40): mysqli_query(Object(mysqli), 'UPDATE facturas...')
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/ajax/datos_remision.php on line 40
+[26-Nov-2025 20:39:10 America/Mexico_City] PHP Warning:  Undefined array key "existencia" in /home2/andres58/public_html/sistema/dist/ajax/editar_productos.php on line 14
+[26-Nov-2025 20:39:34 America/Mexico_City] PHP Warning:  Undefined array key "existencia" in /home2/andres58/public_html/sistema/dist/ajax/editar_productos.php on line 14

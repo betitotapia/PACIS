@@ -1,0 +1,72 @@
+[26-Aug-2025 03:31:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/ver_remision.php on line 4
+[26-Aug-2025 03:31:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/ver_remision.php on line 4
+[26-Aug-2025 09:29:46 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4
+[26-Aug-2025 09:29:47 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4
+[26-Aug-2025 10:06:20 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/descargar_remision.php on line 4
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "id_cliente" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 22
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "letra_ventas" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 24
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "compra" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 25
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "cotizacion" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 26
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "doctor" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 27
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "paciente" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 28
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "material" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 29
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "pago" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 30
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "d_factura" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 31
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "observaciones" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 32
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "hospital" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 33
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Undefined array key "proveedor" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 34
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[28-Aug-2025 17:07:12 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[28-Aug-2025 17:07:35 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[28-Aug-2025 17:07:41 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[28-Aug-2025 17:07:52 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[29-Aug-2025 00:41:53 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[30-Aug-2025 14:14:47 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 83
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 89
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 91
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 93
+[01-Sep-2025 09:06:40 America/Mexico_City] PHP Warning:  Trying to access array offset on value of type null in /home2/andres58/public_html/sistema/dist/pdf/res/print_remision_html.php on line 95
+[01-Sep-2025 18:32:35 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4
+[01-Sep-2025 18:32:40 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4
+[01-Sep-2025 19:28:16 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/descargar_remision.php on line 4
+[01-Sep-2025 19:28:16 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/descargar_remision.php on line 4
+[02-Sep-2025 08:29:08 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4
+[02-Sep-2025 08:29:12 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pdf/print_remision.php on line 4

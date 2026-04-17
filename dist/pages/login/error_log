@@ -1,0 +1,146 @@
+[15-Aug-2025 12:41:04 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 12:41:14 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 12:41:50 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 12:44:20 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 12:48:31 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 12:48:44 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 13:53:41 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'andres58_pacis.users' doesn't exist in /home2/andres58/public_html/sistema/dist/classes/Login.php:73
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/classes/Login.php(73): mysqli->query('SELECT user_id,...')
+#1 /home2/andres58/public_html/sistema/dist/classes/Login.php(38): Login->dologinWithPostData()
+#2 /home2/andres58/public_html/sistema/dist/pages/login/index.php(16): Login->__construct()
+#3 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 73
+[15-Aug-2025 13:59:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 15:38:48 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 15:49:55 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 15:56:06 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 17:13:42 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 17:44:01 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[15-Aug-2025 17:59:49 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[16-Aug-2025 01:53:23 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[16-Aug-2025 07:16:19 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[16-Aug-2025 07:29:37 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 00:51:20 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 01:40:34 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 02:14:26 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 19:41:02 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 19:44:42 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 19:47:25 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 19:55:24 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 19:57:49 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Aug-2025 21:10:28 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[19-Aug-2025 13:13:03 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[19-Aug-2025 14:06:58 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[19-Aug-2025 14:53:42 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[20-Aug-2025 13:23:33 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[20-Aug-2025 21:30:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 03:07:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 07:48:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 09:07:49 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 10:21:25 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 10:59:23 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 12:51:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 15:03:35 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 16:31:48 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[21-Aug-2025 16:59:22 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[22-Aug-2025 12:25:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[22-Aug-2025 14:37:48 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 09:54:20 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 10:57:35 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 11:14:04 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 15:17:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 16:33:05 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 17:56:22 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 20:52:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 20:52:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 20:52:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 20:52:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[23-Aug-2025 20:52:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[25-Aug-2025 10:58:53 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[25-Aug-2025 12:14:19 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[25-Aug-2025 18:13:41 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[25-Aug-2025 23:18:55 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Aug-2025 00:47:01 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Aug-2025 06:46:49 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Aug-2025 09:10:59 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Aug-2025 16:00:39 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[27-Aug-2025 10:19:45 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 14:22:46 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 16:18:45 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 16:33:43 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 16:53:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 17:20:40 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 17:24:05 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[28-Aug-2025 17:25:07 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[29-Aug-2025 00:19:45 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[29-Aug-2025 14:58:47 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[29-Aug-2025 17:03:34 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[30-Aug-2025 13:36:37 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[30-Aug-2025 14:24:23 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[01-Sep-2025 08:46:50 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[01-Sep-2025 13:42:59 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 09:03:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 09:16:43 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 11:45:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 14:04:29 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 14:07:23 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 14:55:37 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 14:56:55 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 16:13:21 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 21:29:44 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[02-Sep-2025 23:31:01 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[03-Sep-2025 00:13:51 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[03-Sep-2025 12:09:56 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[08-Sep-2025 12:42:06 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[09-Sep-2025 17:05:15 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[09-Sep-2025 17:05:22 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[10-Sep-2025 12:50:09 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[10-Sep-2025 21:11:34 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[10-Sep-2025 21:23:38 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[11-Sep-2025 08:27:15 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Sep-2025 01:28:14 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[18-Sep-2025 12:38:30 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[03-Oct-2025 09:58:36 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[03-Nov-2025 12:30:08 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[03-Nov-2025 13:10:35 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[07-Nov-2025 10:53:59 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[07-Nov-2025 10:54:00 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Nov-2025 20:04:00 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90
+[26-Nov-2025 20:10:03 America/Mexico_City] PHP Warning:  Undefined property: stdClass::$nombre in /home2/andres58/public_html/sistema/dist/classes/Login.php on line 90

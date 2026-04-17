@@ -1,0 +1,47 @@
+.icons-white{
+    color:white;
+}
+.btn-scale{
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-scale:hover{
+    transform: scale(1.1);
+}
+.bg_icons-blue{
+    background-color: #0691bf !important;
+}
+.bg_icons-green{
+    background-color: #00cc00 !important;
+}
+.bg_icons-purple{
+    background-color: #cc0081 !important;
+}
+.bg_icons-gray{
+    background-color: #414141 !important;
+}
+.bg_icons-red{
+    background-color: #be0036 !important;
+}
+.bg_icons-highpurple{
+    background-color: #6900cc !important;
+    color: aliceblue !important;
+}
+.g-label-success{
+    background-color: #07a536 !important;
+    color: aliceblue !important;    
+}
+.bg_icons-orange{
+    background-color: #ff8c00 !important;
+    color: aliceblue !important;
+}
+
+.botones_cel{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.boton_new{
+    margin-left:80% !important;
+}

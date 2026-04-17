@@ -1,0 +1,6 @@
+[15-Aug-2025 12:24:14 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/index.php on line 3
+[29-Aug-2025 17:03:32 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/index.php on line 3
+[02-Sep-2025 14:07:21 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/index.php on line 3
+[02-Sep-2025 23:30:47 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/index.php on line 3
+[03-Sep-2025 05:27:57 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/detalle_almacen.php on line 3
+[03-Sep-2025 05:28:03 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/almacenes/detalle_almacen.php on line 3

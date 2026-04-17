@@ -1,0 +1,432 @@
+[15-Aug-2025 12:41:02 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 12:48:19 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 13:53:32 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 13:54:01 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 13:59:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 13:59:58 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 13:59:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 13:59:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 13:59:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 13:59:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:38:39 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 15:38:48 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:42:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:26 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:40 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:43:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:45:32 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:47:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:48:13 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:48:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:48:39 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:49:55 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:55:06 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 15:56:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:56:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:56:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 15:56:34 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:13:13 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 17:13:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:43:52 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[15-Aug-2025 17:44:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:44:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:44:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:44:38 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:44:56 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:45:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:45:31 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:45:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:46:00 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:55:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:58:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:58:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:59:20 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:59:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:59:30 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 17:59:49 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[15-Aug-2025 18:14:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[16-Aug-2025 01:53:07 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[16-Aug-2025 01:53:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[16-Aug-2025 07:16:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 00:51:11 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Aug-2025 01:40:19 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Aug-2025 19:40:45 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Aug-2025 19:41:02 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:41:05 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:41:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:41:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:44:19 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:44:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:44:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:44:42 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:46 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:46:47 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:47:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT_PATH" in /home2/andres58/public_html/sistema/dist/config/conexion.php:30
+Stack trace:
+#0 /home2/andres58/public_html/sistema/dist/pages/ventas/index.php(21): require_once()
+#1 {main}
+  thrown in /home2/andres58/public_html/sistema/dist/config/conexion.php on line 30
+[18-Aug-2025 19:54:15 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Aug-2025 20:03:44 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Aug-2025 21:08:46 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[19-Aug-2025 13:10:18 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[19-Aug-2025 14:06:48 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[19-Aug-2025 14:52:26 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[20-Aug-2025 13:23:24 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[20-Aug-2025 21:30:48 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[21-Aug-2025 03:07:28 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[21-Aug-2025 07:48:48 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision_scliente.php on line 3
+[21-Aug-2025 09:06:46 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[21-Aug-2025 15:21:26 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[21-Aug-2025 15:21:26 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[21-Aug-2025 15:21:26 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[21-Aug-2025 15:21:26 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[21-Aug-2025 16:31:40 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[21-Aug-2025 16:58:05 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[21-Aug-2025 17:04:33 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[21-Aug-2025 17:04:33 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[21-Aug-2025 17:04:33 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[21-Aug-2025 17:04:33 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[22-Aug-2025 14:37:46 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[22-Aug-2025 14:54:06 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[22-Aug-2025 14:54:06 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[22-Aug-2025 14:54:06 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[22-Aug-2025 14:54:06 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 10:57:25 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[23-Aug-2025 11:12:44 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[23-Aug-2025 15:16:05 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[23-Aug-2025 17:56:13 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[23-Aug-2025 18:00:38 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[23-Aug-2025 18:00:38 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[23-Aug-2025 18:00:38 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[23-Aug-2025 18:00:38 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 18:09:45 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[23-Aug-2025 18:09:45 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[23-Aug-2025 18:09:45 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[23-Aug-2025 18:09:45 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 18:09:48 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[23-Aug-2025 18:09:48 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[23-Aug-2025 18:09:48 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[23-Aug-2025 18:09:48 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 18:11:45 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[23-Aug-2025 18:11:45 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[23-Aug-2025 18:11:45 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[23-Aug-2025 18:11:45 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 18:23:46 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[23-Aug-2025 18:23:46 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[23-Aug-2025 18:23:46 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[23-Aug-2025 18:23:46 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[23-Aug-2025 20:52:25 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[23-Aug-2025 20:52:25 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[25-Aug-2025 05:47:26 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision_scliente.php on line 3
+[25-Aug-2025 10:58:51 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[25-Aug-2025 12:14:12 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[25-Aug-2025 12:14:36 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 52
+[25-Aug-2025 12:14:36 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 55
+[25-Aug-2025 12:14:36 America/Mexico_City] PHP Warning:  Undefined array key "numext" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 174
+[25-Aug-2025 12:14:36 America/Mexico_City] PHP Warning:  Undefined array key "emailpred" in /home2/andres58/public_html/sistema/dist/pages/ventas/editar_remision.php on line 190
+[25-Aug-2025 18:13:38 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[25-Aug-2025 23:18:48 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Aug-2025 00:46:51 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Aug-2025 00:46:52 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Aug-2025 06:46:33 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Aug-2025 09:10:47 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[27-Aug-2025 10:19:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[28-Aug-2025 16:53:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[28-Aug-2025 16:53:49 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[29-Aug-2025 00:19:36 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[29-Aug-2025 12:49:23 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[01-Sep-2025 08:46:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 09:03:53 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 14:04:11 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 14:55:05 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 16:13:18 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 18:01:19 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[02-Sep-2025 21:29:28 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[03-Sep-2025 00:13:36 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[08-Sep-2025 11:01:43 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[08-Sep-2025 12:41:59 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[09-Sep-2025 17:05:15 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[10-Sep-2025 21:04:08 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[10-Sep-2025 21:11:27 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[10-Sep-2025 21:23:35 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Sep-2025 01:27:49 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[18-Sep-2025 12:38:19 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[03-Oct-2025 09:58:28 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[07-Nov-2025 10:53:40 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Nov-2025 20:02:49 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
+[26-Nov-2025 20:10:00 America/Mexico_City] PHP Warning:  Undefined array key "user_login_status" in /home2/andres58/public_html/sistema/dist/pages/ventas/index.php on line 3
