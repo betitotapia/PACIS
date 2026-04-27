@@ -16,6 +16,14 @@
                             <input type="hidden" class="form-control" id="modal_id_producto" name="id_producto">
                         </div>
                         <div class="form-group">
+                            <label for="cve_alterna_1" class="col-form-label">Clave alterna 1</label>
+                            <input type="text" class="form-control" id="modalCveAlterna1" name="cve_alterna_1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cve_alterna_2" class="col-form-label">Clave alterna 2</label>
+                            <input type="text" class="form-control" id="modalCveAlterna2" name="cve_alterna_2">
+                        </div>
+                        <div class="form-group">
                             <label for="descripcion" class="col-form-label">Descripción</label>
                             <input type="text" class="form-control" id="modalDescripcion" name="descripcion">
                         </div>

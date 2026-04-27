@@ -78,9 +78,10 @@ $active_lista_recepciones  = nav_active(['/recepciones/index.php', '/recepciones
 $active_nueva_recepcion    = nav_active(['/recepciones/nueva.php', '/recepciones/nueva']);
 $open_recepciones          = nav_open(['/recepciones/']);
 
-// ALMACENES / TERCEROS / USUARIOS
-$active_almacenes = nav_active(['/almacenes/']);
-$open_almacenes   = nav_open(['/almacenes/']);
+// ALMACENES / TRASPASOS / TERCEROS / USUARIOS
+$active_almacenes  = nav_active(['/almacenes/']);
+$active_traspasos  = nav_active(['/traspasos/']);
+$open_almacenes    = nav_open(['/almacenes/', '/traspasos/']);
 
 $active_terceros   = nav_active(['/terceros/']);
 $active_provedores = nav_active(['/terceros/proveedores.php', '/terceros/proveedores']);
@@ -88,6 +89,10 @@ $open_terceros     = nav_open(['/terceros/']);
 
 $active_usuarios = nav_active(['/usuarios/']);
 $open_usuarios   = nav_open(['/usuarios/']);
+
+$active_config_series        = nav_active(['/config/facturacion_series.php', '/config/facturacion_series']);
+$active_config_remi_series   = nav_active(['/config/remision_series.php', '/config/remision_series']);
+$open_configuracion          = nav_open(['/config/']);
 
 ?>
 
@@ -259,6 +264,13 @@ $open_usuarios   = nav_open(['/usuarios/']);
                 <p>Lista</p>
               </a>
             </li>
+            <li class="nav-item">
+              <?php $circle = nav_circle($active_traspasos); ?>
+              <a href="../traspasos/index.php" class="nav-link <?php echo $active_traspasos; ?>">
+                <i class="nav-icon bi <?php echo $circle; ?>"></i>
+                <p>Traspasos</p>
+              </a>
+            </li>
           </ul>
         </li>
         <!-- ============== FIN ALMACENES ============== -->
@@ -315,6 +327,36 @@ $open_usuarios   = nav_open(['/usuarios/']);
           </ul>
         </li>
         <!-- ============== FIN USUARIOS ============== -->
+
+        <!-- ================= CONFIGURACION ================= -->
+        <?php if ($nivel == 1) { ?>
+        <li class="nav-item <?php echo $open_configuracion; ?>">
+          <a href="#" class="nav-link ">
+            <i class="bi bi-gear-fill"></i>
+            <p>
+              CONFIGURACION
+              <i class="nav-arrow bi bi-chevron-right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <?php $circle = nav_circle($active_config_series); ?>
+              <a href="../config/facturacion_series.php" class="nav-link <?php echo $active_config_series; ?>">
+                <i class="nav-icon bi <?php echo $circle; ?>"></i>
+                <p>Facturacion / Series</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <?php $circle = nav_circle($active_config_remi_series); ?>
+              <a href="../config/remision_series.php" class="nav-link <?php echo $active_config_remi_series; ?>">
+                <i class="nav-icon bi <?php echo $circle; ?>"></i>
+                <p>Remisiones / Series</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <?php } ?>
+        <!-- ============== FIN CONFIGURACION ============== -->
 
       </ul>
     </nav>

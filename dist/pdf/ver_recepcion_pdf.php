@@ -4,7 +4,7 @@ if (!isset($_SESSION['user_login_status']) || $_SESSION['user_login_status'] != 
     header("location: ../../login.php");
     exit;
 }
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 /* Conexión */
 include("../config/db.php");

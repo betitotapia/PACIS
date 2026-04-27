@@ -54,7 +54,6 @@ error_reporting(0);
 
 		$query = mysqli_query($con, $sql);		//loop through fetched data
 
-			echo mysqli_error($con);
 			?>
 <div class="table-responsive">
     <table class="table  table-striped" id="myTable">

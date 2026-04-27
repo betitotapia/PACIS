@@ -41,6 +41,7 @@ if ($action == 'ajax') {
           <th>Almacén</th>
           <th>Usuario</th>
           <th class="text-right">Total</th>
+          <th>Estatus</th>
           <th width="220">Acciones</th>
         </tr>
       </thead>
@@ -53,6 +54,11 @@ if ($action == 'ajax') {
             <td><?php echo $row['numero_almacen']." - ".htmlspecialchars($row['almacen_desc']); ?></td>
             <td><?php echo htmlspecialchars($row['usuario_nombre']); ?></td>
             <td class="text-right"><?php echo number_format($row['total'], 2); ?></td>
+            <td>
+              <span class="badge bg-<?php echo ($row['estatus'] === 'CANCELADA') ? 'danger' : 'success'; ?>">
+                <?php echo htmlspecialchars($row['estatus'] ?? 'ACTIVA'); ?>
+              </span>
+            </td>
             <td class="text-center">
 
               <!-- Ver/Generar acuse (tu html2pdf) -->

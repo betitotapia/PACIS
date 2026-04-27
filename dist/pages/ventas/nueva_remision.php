@@ -29,6 +29,15 @@ $nueva_remision = $_GET['n_remi'] ?? null;
 
 $remision ="P".$letra."-".$nueva_remision;
 
+$series_remision = mysqli_query($con, "SELECT id_serie, serie, descripcion FROM remision_series WHERE activo = 1 ORDER BY serie ASC");
+
+// Folio/serie ya guardados para esta remision (si regresa a editar).
+$remi_serie_actual = null;
+if ($nueva_remision) {
+  $qAct = mysqli_query($con, "SELECT id_serie_remision, serie_remision, folio_remision FROM facturas WHERE numero_factura = " . (int)$nueva_remision . " LIMIT 1");
+  $remi_serie_actual = $qAct ? mysqli_fetch_assoc($qAct) : null;
+}
+
 
 if (isset($_GET['id']))//codigo elimina un elemento del array
 {
@@ -200,6 +209,28 @@ include '../aside_menu.php';
 								<input type="hidden" name="numero_factura" id="numero_factura" value="<?php echo $nueva_remision?>" >
 								</div>
 							</div>
+						<br>
+						<div class="form-group row">
+							<label for="id_serie_remision" class="col-md-1 control-label">Serie</label>
+							<div class="col-md-2">
+								<select class="form-control input-sm" id="id_serie_remision" name="id_serie_remision_f">
+									<option value="0">Sin serie</option>
+									<?php if ($series_remision): while ($sr = mysqli_fetch_assoc($series_remision)): ?>
+										<option value="<?php echo (int)$sr['id_serie']; ?>"
+											<?php echo ((int)($remi_serie_actual['id_serie_remision'] ?? 0) === (int)$sr['id_serie']) ? 'selected' : ''; ?>>
+											<?php echo htmlspecialchars($sr['serie'] . ($sr['descripcion'] ? ' - ' . $sr['descripcion'] : '')); ?>
+										</option>
+									<?php endwhile; endif; ?>
+								</select>
+								<small class="text-muted">Configura en Configuracion &gt; Remisiones / Series</small>
+							</div>
+							<label for="folio_remision_display" class="col-md-1 control-label">Folio</label>
+							<div class="col-md-2">
+								<input type="text" class="form-control input-sm" id="folio_remision_display"
+									value="<?php echo htmlspecialchars((string)($remi_serie_actual['folio_remision'] ?? '')); ?>"
+									readonly placeholder="Automatico">
+							</div>
+						</div>
 						</div>
 				</div>
 						<div class="col-md-12">
@@ -236,8 +267,54 @@ include '../aside_menu.php';
 </body>
 </html>
 <script>
+async function guardarSerieRemision() {
+  const idSerie = parseInt(document.getElementById('id_serie_remision').value || '0', 10);
+  if (!idSerie) return;
+
+  const numeroFactura = document.getElementById('numero_factura').value;
+  const idVendedor    = document.getElementById('id_vendedor').value;
+
+  try {
+    const r = await fetch('../../ajax/guardar_remision_serie.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ numero_factura: numeroFactura, id_vendedor: idVendedor, id_serie: idSerie })
+    });
+    const data = await r.json();
+    if (data.ok) {
+      document.getElementById('folio_remision_display').value = data.folio;
+    } else {
+      Swal.fire({ icon: 'warning', title: 'Serie / Folio', text: data.error || 'No se pudo asignar el folio.' });
+    }
+  } catch (e) { /* silencioso */ }
+}
+
+async function previewFolioRemision() {
+  const idSerie       = parseInt(document.getElementById('id_serie_remision').value || '0', 10);
+  const folioInput    = document.getElementById('folio_remision_display');
+  const numeroFactura = document.getElementById('numero_factura').value;
+
+  if (!idSerie) { folioInput.value = ''; return; }
+
+  try {
+    const r    = await fetch('../../ajax/preview_folio_remision_serie.php?id_serie=' + idSerie + '&numero_factura=' + encodeURIComponent(numeroFactura));
+    const data = await r.json();
+    if (data.ok) {
+      folioInput.value = data.folio;
+    } else {
+      folioInput.value = '';
+      Swal.fire({ icon: 'warning', title: 'Serie', text: data.error || 'No se pudo calcular el folio.' });
+    }
+  } catch (e) { folioInput.value = ''; }
+}
+
+document.getElementById('id_serie_remision').addEventListener('change', previewFolioRemision);
+
+// Cargar preview si ya hay serie seleccionada al abrir la pagina.
+(function(){ if (parseInt(document.getElementById('id_serie_remision').value||'0',10) > 0) previewFolioRemision(); })();
+
 $( "#datos_remision" ).submit(function( event ) {
-		 
+
 	var parametros = $(this).serialize();
   var id_cliente = $("#id_cliente").val().trim();
 
@@ -258,13 +335,14 @@ $( "#datos_remision" ).submit(function( event ) {
 					 beforeSend: function(objeto){
 						$("#resultados_ajax").html("Mensaje: Cargando...");
 					  },
-					success: function(datos){
+					success: async function(datos){
+						await guardarSerieRemision();
 						Swal.fire({
 				title: "Remisión guardada exitosamente",
 				text: "OK!",
 				icon: "success"
 				});
-				
+
 				  }
 			});
 		  event.preventDefault();

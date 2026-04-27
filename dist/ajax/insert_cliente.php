@@ -52,7 +52,22 @@ if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)){
   exit;
 }
 
-// 5) Subida de PDF (opcional) → guardamos ruta en campo `cedula`
+// 5) Verifica que el RFC no esté duplicado
+$chk = $con->prepare("SELECT id_cliente, nombre_cliente FROM clientes WHERE rfc = ? LIMIT 1");
+if ($chk) {
+    $chk->bind_param('s', $rfc);
+    $chk->execute();
+    $dup = $chk->get_result()->fetch_assoc();
+    $chk->close();
+    if ($dup) {
+        http_response_code(409);
+        echo json_encode(['ok'=>false,'error'=>'El RFC ya está registrado con el cliente: ' . $dup['nombre_cliente']]);
+        $con->close();
+        exit;
+    }
+}
+
+// 6) Subida de PDF (opcional) → guardamos ruta en campo `cedula`
 $cedula_path = '';
 if (!empty($_FILES['csf_pdf']['name'])) {
   $f = $_FILES['csf_pdf'];
@@ -83,7 +98,7 @@ if (!empty($_FILES['csf_pdf']['name'])) {
   }
 }
 
-// 6) Insert preparado
+// 7) Insert preparado
 $sql = "INSERT INTO clientes (
   nombre_cliente, rfc, calle, num_ext, num_int, colonia, postal,
   telefono, email, cedula, uso_cfdi, forma_pago, metodo_pago,

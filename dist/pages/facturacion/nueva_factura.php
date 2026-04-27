@@ -44,7 +44,7 @@ if ($id <= 0) {
     mysqli_query($con, "UPDATE fact_facturas ff
       JOIN facturas f ON f.numero_factura=$id_remision
       SET ff.id_cliente = f.id_cliente
-      WHERE ff.numero_fact_factura=$id");
+        WHERE ff.id_fact_facturas=$id");
 
     $dq = mysqli_query($con, "SELECT id_producto, cantidad, precio_venta, id_almacen, id_vendedor
       FROM detalle_factura
@@ -52,12 +52,18 @@ if ($id <= 0) {
 
     while ($d = mysqli_fetch_assoc($dq)) {
       $pid = (int)$d['id_producto'];
+        $almacen = (int)($d['id_almacen'] ?? ($d['almacen'] ?? 0));
+      $qp = mysqli_query($con, "SELECT referencia, lote, caducidad FROM products WHERE id_producto = $pid LIMIT 1");
+      $pr = $qp ? mysqli_fetch_assoc($qp) : null;
+      $cve = mysqli_real_escape_string($con, (string)($d['referencia'] ?? ($pr['referencia'] ?? '')));
+      $lote = mysqli_real_escape_string($con, (string)($pr['lote'] ?? ''));
+      $caducidad = mysqli_real_escape_string($con, (string)($pr['caducidad'] ?? ''));
 
       // Inserta en tu tabla de detalle de borrador
       mysqli_query($con, "INSERT INTO detalle_fact_factura
-        (numero_fact_factura, id_producto, cantidad, precio_venta, id_almacen, id_vendedor, date_created)
+        (numero_fact_factura, id_producto, cantidad, precio_venta, id_almacen, id_vendedor, lote, caducidad, cve_producto, tipo_producto, date_created)
         VALUES
-        ($id, $pid, ".(float)$d['cantidad'].", ".(float)$d['precio_venta'].", ".(int)$d['id_almacen'].", ".(int)$d['id_vendedor'].", NOW())");
+        ($id, $pid, ".(float)$d['cantidad'].", ".(float)$d['precio_venta'].", $almacen, ".(int)$d['id_vendedor'].", '$lote', '$caducidad', '$cve', 'P', NOW())");
     }
   }
 
@@ -73,8 +79,11 @@ $fact = mysqli_fetch_assoc($ff);
 if(!$fact){ die("Factura inválida"); }
 
 $clientes = mysqli_query($con, "SELECT id_cliente, nombre_cliente, rfc FROM clientes ORDER BY nombre_cliente");
+$series = mysqli_query($con, "SELECT id_serie, serie, descripcion, activo FROM facturacion_series WHERE activo = 1 OR id_serie = ".(int)($fact['id_serie_facturacion'] ?? 0)." ORDER BY serie ASC");
 
-$items = mysqli_query($con, "SELECT df.*, p.referencia, p.descripcion
+$items = mysqli_query($con, "SELECT df.*, df.cve_producto AS referencia_display, p.descripcion
+  , COALESCE(NULLIF(df.lote,''), p.lote) AS lote_display
+  , COALESCE(NULLIF(df.caducidad,'0000-00-00'), p.caducidad) AS caducidad_display
   FROM detalle_fact_factura df
   LEFT JOIN products p ON p.id_producto=df.id_producto
   WHERE df.numero_fact_factura=$id
@@ -147,13 +156,21 @@ include("../header.php");
                   </div>
 
                   <div class="col-md-3">
-                    <label class="form-label">Serie</label>
-                    <input class="form-control" id="serie" value="<?php echo htmlspecialchars($fact['serie'] ?? 'A'); ?>">
+                    <label class="form-label">Serie de facturacion</label>
+                    <select class="form-select" id="id_serie_facturacion">
+                      <option value="0">Selecciona serie...</option>
+                      <?php if($series): while($s = mysqli_fetch_assoc($series)): ?>
+                        <option value="<?php echo (int)$s['id_serie']; ?>" <?php echo ((int)$s['id_serie']===(int)($fact['id_serie_facturacion']??0))?'selected':''; ?>>
+                          <?php echo htmlspecialchars($s['serie'].' - '.($s['descripcion'] ?? '')); ?>
+                        </option>
+                      <?php endwhile; endif; ?>
+                    </select>
+                    <div class="form-text">Las series se administran en Configuracion > Facturacion / Series.</div>
                   </div>
 
                   <div class="col-md-3">
-                    <label class="form-label">Folio</label>
-                    <input class="form-control" id="folio" value="<?php echo htmlspecialchars($fact['folio'] ?? ''); ?>">
+                    <label class="form-label">Folio (automatico)</label>
+                    <input class="form-control" id="folio" value="<?php echo htmlspecialchars((string)($fact['folio'] ?? '')); ?>" readonly>
                   </div>
 
                   <div class="col-md-3">
@@ -184,6 +201,8 @@ include("../header.php");
                     <thead style="background:#0d6efd;color:#fff;">
                       <tr>
                         <th>Referencia</th>
+                        <th>Lote</th>
+                        <th>Caducidad</th>
                         <th>Descripción</th>
                         <th class="text-end">Cantidad</th>
                         <th class="text-end">Precio</th>
@@ -201,7 +220,9 @@ include("../header.php");
                           $sum += $imp;
                       ?>
                       <tr>
-                        <td><?php echo htmlspecialchars($it['referencia'] ?? ''); ?></td>
+                        <td><?php echo htmlspecialchars($it['referencia_display'] ?? ''); ?></td>
+                        <td><?php echo htmlspecialchars($it['lote_display'] ?? ''); ?></td>
+                        <td><?php echo !empty($it['caducidad_display']) && $it['caducidad_display'] !== '0000-00-00' ? htmlspecialchars(date('d/m/Y', strtotime($it['caducidad_display']))) : '—'; ?></td>
                         <td><?php echo htmlspecialchars($it['descripcion'] ?? ''); ?></td>
                         <td class="text-end"><?php echo number_format($cant,2); ?></td>
                         <td class="text-end"><?php echo number_format($precio,2); ?></td>
@@ -242,7 +263,7 @@ include("../header.php");
                   </table>
                 </div>
                 <div class="text-muted mt-2" style="font-size:12px;">
-                  Nota: para evitar diferencias, recomiendo calcular y guardar subtotal/iva/total en BD al momento de guardar/timbrar.
+                  <!-- Nota: para evitar diferencias, recomiendo calcular y guardar subtotal/iva/total en BD al momento de guardar/timbrar. -->
                 </div>
               </div>
             </div>
@@ -274,20 +295,76 @@ async function post(url, data){
   return await r.json();
 }
 
-document.getElementById('btnGuardarHeader').addEventListener('click', async ()=>{
-  const res = await post('../../ajax/guardar_factura_header.php', {
-    id: <?php echo (int)$id; ?>,
-    id_cliente: document.getElementById('id_cliente').value,
-    metodo_pago: document.getElementById('metodo_pago').value,
-    forma_pago: document.getElementById('forma_pago').value,
-    uso_cfdi: document.getElementById('uso_cfdi').value,
-    serie: document.getElementById('serie').value,
-    folio: document.getElementById('folio').value,
-    moneda: document.getElementById('moneda').value,
-    tipo_cambio: document.getElementById('tipo_cambio').value
-  });
+async function cargarPreviewFolioSerie(){
+  const sel = document.getElementById('id_serie_facturacion');
+  const folioInput = document.getElementById('folio');
+  const idSerie = parseInt(sel.value || '0', 10);
+  if (!idSerie) {
+    folioInput.value = '';
+    return;
+  }
 
-  alert(res.ok ? 'Guardado' : ('Error: '+(res.error||'')));
+  try {
+    const r = await fetch('../../ajax/preview_folio_serie.php?id_serie=' + encodeURIComponent(idSerie) + '&id_fact=<?php echo (int)$id; ?>');
+    const data = await r.json();
+    if (data.ok) {
+      folioInput.value = data.folio;
+    } else {
+      folioInput.value = '';
+      Swal.fire({ icon:'warning', title:'Serie sin folio', text:(data.error || 'No fue posible calcular el folio.') });
+    }
+  } catch (e) {
+    folioInput.value = '';
+  }
+}
+
+document.getElementById('id_serie_facturacion').addEventListener('change', cargarPreviewFolioSerie);
+if (document.getElementById('id_serie_facturacion').value === '0' && document.getElementById('id_serie_facturacion').options.length > 1) {
+  document.getElementById('id_serie_facturacion').selectedIndex = 1;
+}
+if (document.getElementById('id_serie_facturacion').value !== '0') {
+  cargarPreviewFolioSerie();
+}
+
+document.getElementById('btnGuardarHeader').addEventListener('click', async ()=>{
+  try {
+    const res = await post('../../ajax/guardar_factura_header.php', {
+      id: <?php echo (int)$id; ?>,
+      id_cliente: document.getElementById('id_cliente').value,
+      id_serie: document.getElementById('id_serie_facturacion').value,
+      metodo_pago: document.getElementById('metodo_pago').value,
+      forma_pago: document.getElementById('forma_pago').value,
+      uso_cfdi: document.getElementById('uso_cfdi').value,
+      folio: document.getElementById('folio').value,
+      moneda: document.getElementById('moneda').value,
+      tipo_cambio: document.getElementById('tipo_cambio').value
+    });
+
+    if (res.ok) {
+      await cargarPreviewFolioSerie();
+      const selSerie = document.getElementById('id_serie_facturacion');
+      const txtSerie = selSerie.options[selSerie.selectedIndex] ? selSerie.options[selSerie.selectedIndex].text.split(' - ')[0] : '';
+      Swal.fire({
+        icon: 'success',
+        title: 'Datos guardados con exito',
+        text: 'Serie ' + txtSerie + ' - Folio ' + (document.getElementById('folio').value || ''),
+        timer: 1600,
+        showConfirmButton: false
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'No se pudo guardar',
+        text: (res.error || 'Error desconocido')
+      });
+    }
+  } catch (e) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Error de red',
+      text: 'No fue posible guardar los datos de la factura.'
+    });
+  }
 });
 
 document.getElementById('btnTimbrar').addEventListener('click', async ()=>{

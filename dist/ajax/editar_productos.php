@@ -8,6 +8,8 @@
 		// escaping, additionally removing everything that could be (html/javascript-) code
 		$id_producto=intval($_POST["id_producto"]);
         $referencia=$_POST["referencia"];
+		$cve_alterna_1=$_POST["cve_alterna_1"] ?? '';
+		$cve_alterna_2=$_POST["cve_alterna_2"] ?? '';
         $descripcion=$_POST["descripcion"];
 		$lote=$_POST["lote"];
 		$caducidad=$_POST["caducidad"];
@@ -18,7 +20,7 @@
 		
 		
 	    //echo "<script>console.log('work:".$codigo." ".$referencia." ".$nombre." ".$existencia." ".$id_producto."');</script>";
-		$sql="UPDATE products SET referencia='".$referencia."', descripcion='".$descripcion."', lote='".$lote."', caducidad='".$caducidad."', costo='".$costo."',  precio_producto='".$precio."' WHERE id_producto='".$id_producto."'";
+		$sql="UPDATE products SET referencia='".$referencia."', cve_alterna_1='".$cve_alterna_1."', cve_alterna_2='".$cve_alterna_2."', descripcion='".$descripcion."', lote='".$lote."', caducidad='".$caducidad."', costo='".$costo."',  precio_producto='".$precio."' WHERE id_producto='".$id_producto."'";
 		$query_update = mysqli_query($con,$sql);
 	echo "<script>consoloe.log('work:se ejecuto la actualizacion');</script>";
 		if ($query_update) {

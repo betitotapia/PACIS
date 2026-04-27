@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
+if (!isset($_SESSION['user_login_status']) || $_SESSION['user_login_status'] != 1) {
 	header("location: ../login");
 	exit;
 	}
@@ -12,6 +12,8 @@ $caducidad = $_POST['caducidad'];
 $referencia = $_POST['referencia'] ?? '';
 $operacion = $_POST['operacion'] ?? 'sumar';
 $descripcion = $_POST['descripcion'] ?? '';
+$cve_alterna_1 = $_POST['cve_alterna_1'] ?? '';
+$cve_alterna_2 = $_POST['cve_alterna_2'] ?? '';
 $costo = isset($_POST['costo']) ? (float)$_POST['costo'] : 0;
 $precio = isset($_POST['precio']) ? (float)$_POST['precio'] : 0;
 $cantidad_ajuste = isset($_POST['cantidad']) ? (int)$_POST['cantidad'] : 0;
@@ -75,8 +77,8 @@ if ($producto) {
     } elseif ($base) {
         
         // Usar referencia existente 
-        $pdo->prepare("INSERT INTO products (barcode,referencia, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?, ?,?,?,?,?,1,NOW())")
-            ->execute([$barcode,$base['referencia'], $base['descripcion'],  ($operacion === 'ajuste') ? $cantidad_ajuste : 1,$lote, $caducidad, $base['costo'], $base['precio_producto'],  $almacen]);
+        $pdo->prepare("INSERT INTO products (barcode,referencia,cve_alterna_1,cve_alterna_2, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,1,NOW())")
+            ->execute([$barcode,$base['referencia'], $base['cve_alterna_1'] ?? null, $base['cve_alterna_2'] ?? null, $base['descripcion'],  ($operacion === 'ajuste') ? $cantidad_ajuste : 1,$lote, $caducidad, $base['costo'], $base['precio_producto'],  $almacen]);
             $id_insertado = $pdo->lastInsertId(); 
 
         $pdo->prepare("INSERT INTO movimientos (id_producto, cantidad, tipo_movimiento, id_usuario, date_created) VALUES (?, ?, ?, ?, NOW())")
@@ -87,8 +89,8 @@ if ($producto) {
 
         if ($operacion === 'ajuste') {
 
-             $pdo->prepare("INSERT INTO products (barcode,referencia, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?, ?, ?,?,?,?,1,NOW())")
-        ->execute([$barcode, $referencia, $descripcion, $cantidad_ajuste, $lote, $caducidad, $costo, $precio, $almacen]);
+               $pdo->prepare("INSERT INTO products (barcode,referencia,cve_alterna_1,cve_alterna_2, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,1,NOW())")
+           ->execute([$barcode, $referencia, ($cve_alterna_1 !== '' ? $cve_alterna_1 : null), ($cve_alterna_2 !== '' ? $cve_alterna_2 : null), $descripcion, $cantidad_ajuste, $lote, $caducidad, $costo, $precio, $almacen]);
         $id_insertado = $pdo->lastInsertId(); 
 
         $pdo->prepare("INSERT INTO movimientos (id_producto, cantidad, tipo_movimiento, id_usuario, date_created) VALUES (?, ?, ?, ?, NOW())")
@@ -96,8 +98,8 @@ if ($producto) {
         echo "Producto insertado.";
 
         }else{       // Usar referencia proporcionada
-        $pdo->prepare("INSERT INTO products (barcode,referencia, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?,?, ?, ?,?,?,1,NOW())")
-        ->execute([$barcode,$referencia,$descripcion,1, $lote, $caducidad,$costo, $precio, $almacen]);
+        $pdo->prepare("INSERT INTO products (barcode,referencia,cve_alterna_1,cve_alterna_2, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen,estatus,ultima_modificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,1,NOW())")
+        ->execute([$barcode,$referencia, ($cve_alterna_1 !== '' ? $cve_alterna_1 : null), ($cve_alterna_2 !== '' ? $cve_alterna_2 : null), $descripcion,1, $lote, $caducidad,$costo, $precio, $almacen]);
         $id_insertado = $pdo->lastInsertId(); 
 
         $pdo->prepare("INSERT INTO movimientos (id_producto, cantidad, tipo_movimiento, id_usuario, date_created) VALUES (?, ?, ?, ?, NOW())")

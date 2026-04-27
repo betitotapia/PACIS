@@ -238,7 +238,7 @@ function procesarCodigoSimple(codigo, operacion) {
   
     // ========== FUNCIONES AUXILIARES ========== //
     
-function enviarDatos(codigo, lote, caducidad, referencia, operacion, descripcion = '', costo = '', precio = '',cantidad = '') {
+function enviarDatos(codigo, lote, caducidad, referencia, operacion, descripcion = '', costo = '', precio = '',cantidad = '', cve_alterna_1 = '', cve_alterna_2 = '') {
   
   const almacen = document.getElementById('id_almacen').value
   const data = new URLSearchParams();
@@ -261,6 +261,8 @@ function enviarDatos(codigo, lote, caducidad, referencia, operacion, descripcion
   data.append('almacen', almacen);
 
   if (descripcion) data.append('descripcion', descripcion);
+  if (cve_alterna_1) data.append('cve_alterna_1', cve_alterna_1);
+  if (cve_alterna_2) data.append('cve_alterna_2', cve_alterna_2);
   if (costo) data.append('costo', costo);
   if (precio) data.append('precio', precio);
    if (cantidad !== '' && cantidad !== null && cantidad !== undefined) {
@@ -297,6 +299,8 @@ function enviarDatos(codigo, lote, caducidad, referencia, operacion, descripcion
 
   document.getElementById('btnGuardarProducto').onclick = function () {
     const referencia = document.getElementById('modalReferencia').value.trim();
+    const cve_alterna_1 = (document.getElementById('modalCveAlterna1')?.value || '').trim();
+    const cve_alterna_2 = (document.getElementById('modalCveAlterna2')?.value || '').trim();
     const descripcion = document.getElementById('modalDescripcion').value.trim();
     const costo = document.getElementById('modalCosto').value.trim();
     const precio = document.getElementById('modalPrecio').value.trim();
@@ -307,7 +311,7 @@ function enviarDatos(codigo, lote, caducidad, referencia, operacion, descripcion
     } 
 
     cerrarModal(modal);
- enviarDatos(codigo, lote, caducidad, referencia, operacion,descripcion, costo, precio, cantidadPendienteAjuste);
+ enviarDatos(codigo, lote, caducidad, referencia, operacion,descripcion, costo, precio, cantidadPendienteAjuste, cve_alterna_1, cve_alterna_2);
  cantidadPendienteAjuste = null;
   };
 }

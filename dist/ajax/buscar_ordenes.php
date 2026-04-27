@@ -1,9 +1,8 @@
 <?php
-	//include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
+	include('is_logged.php');
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 	require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
-	$_SESSION["user_id"]=1;
 	//Archivo de funciones PHP
 	//include("../funciones.php");
 	$action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
@@ -24,7 +23,6 @@
 					$sql_usuario=mysqli_query($con,"select is_admin from users where user_id ='$session_id'");
 					$rj_usuario=mysqli_fetch_array($sql_usuario);
 					$is_admin=$rj_usuario['is_admin'];
-					echo "<script>console.log('work:se ejecuto codigo usuario: ".$session_id."');</script>"
 		
 			?>
 			<div class="table-responsive">
@@ -60,18 +58,26 @@
                 <td><?php echo htmlspecialchars($row['nombre_provedor']); ?></td>
                 <td><?php echo $row['numero_almacen']." - ".$row['almacen_desc']; ?></td>
                 <td>
-                  <span class="badge bg-<?php
-                    echo ($row['estatus']=='CERRADA')?'success':(($row['estatus']=='PARCIAL')?'warning':'primary');
-                  ?>">
+                  <?php
+                    $badge = match($row['estatus']) {
+                        'CERRADA'   => 'success',
+                        'PARCIAL'   => 'warning',
+                        'CANCELADA' => 'danger',
+                        default     => 'primary',
+                    };
+                  ?>
+                  <span class="badge bg-<?php echo $badge; ?>">
                     <?php echo $row['estatus']; ?>
                   </span>
                 </td>
                 <td class="text-right"><?php echo number_format($row['total'],2); ?></td>
                 <td>
+                  <?php if (in_array($row['estatus'], ['ABIERTA', 'PARCIAL'])): ?>
                   <a class="btn btn-info btn-sm"
                      href="../recepciones/nueva.php?id_oc=<?php echo $row['id_oc']; ?>&id_proveedor=<?php echo $row['id_proveedor']; ?>">
                     <i class="fa fa-truck"></i> Recibir
                   </a>
+                  <?php endif; ?>
                   <a class="btn btn-default bg_icons-purple btn-scale"
                       title="Ver"
                       href="#"
@@ -99,18 +105,22 @@
                     </a>
                 </td>
                 <td class="columnas">
+                    <?php if ($row['estatus'] !== 'CANCELADA'): ?>
                     <a href="../ordenes_compra/editar.php?id_oc=<?php echo $row['id_oc']; ?>"
                         class="btn btn-default bg_icons-purple btn-scale"
                         title="Editar">
                        <ion-icon name="create" class="icons-white"></ion-icon>
                     </a>
+                    <?php endif; ?>
 
+                    <?php if ($row['estatus'] === 'ABIERTA'): ?>
                     <a href="#"
                         onclick="eliminar_orden_compra(<?php echo $row['id_oc']; ?>); return false;"
                         class="btn btn-default bg_icons-gray btn-scale"
-                        title="Eliminar">
+                        title="Cancelar OC">
                               <ion-icon name="close" class="icons-white"></ion-icon>
                     </a>
+                    <?php endif; ?>
                     </td>
 
               </tr>

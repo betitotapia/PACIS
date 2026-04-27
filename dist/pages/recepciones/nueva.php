@@ -185,7 +185,15 @@ $id_prov_get = isset($_GET['id_proveedor']) ? (int)$_GET['id_proveedor'] : 0;
             <label>Referencia</label>
             <input type="text" id="np_referencia" class="form-control">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-4">
+            <label>Clave alterna 1</label>
+            <input type="text" id="np_cve_alterna_1" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label>Clave alterna 2</label>
+            <input type="text" id="np_cve_alterna_2" class="form-control">
+          </div>
+          <div class="col-md-12" style="margin-top:10px;">
             <label>Descripción</label>
             <input type="text" id="np_descripcion" class="form-control">
           </div>

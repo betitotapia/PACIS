@@ -35,7 +35,7 @@ $folio = "P".($letra_ventas ?? '')."-".(int)$numero_factura;
 $det = mysqli_query($con, "
   SELECT
     f.id_detalle, f.numero_factura, f.id_producto, f.cantidad, f.precio_venta, f.iva,
-    p.referencia, p.descripcion, p.lote, p.caducidad
+    f.referencia AS referencia_mostrada, p.descripcion, p.lote, p.caducidad
   FROM detalle_factura f
   INNER JOIN products p ON f.id_producto = p.id_producto
   WHERE f.numero_factura = '".mysqli_real_escape_string($con, (string)$numero_factura)."'
@@ -344,7 +344,7 @@ tbody tr:last-child td{ border-bottom:none; }
             }
           ?>
           <tr>
-            <td><?php echo h($row['referencia']); ?><br>021354</td>
+            <td><?php echo h($row['referencia_mostrada']); ?><br>021354</td>
             <td><?php echo h($row['descripcion']); ?></td>
             <td><?php echo h($row['lote']); ?></td>
             <td><?php echo h($row['caducidad']); ?></td>

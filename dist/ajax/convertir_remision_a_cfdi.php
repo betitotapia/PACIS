@@ -11,6 +11,43 @@ if (!isset($_SESSION['user_login_status']) || $_SESSION['user_login_status'] != 
 include("../config/db.php");
 include("../config/conexion.php");
 
+function copiar_detalle_remision_a_factura(mysqli $con, int $id_remision, int $id_fact, int $id_vendedor): array {
+  $qd = mysqli_query($con, "SELECT *
+    FROM detalle_factura
+    WHERE numero_factura = $id_remision");
+
+  if (!$qd) {
+    return ['ok' => false, 'error' => 'Error al leer detalle de remision: '.mysqli_error($con)];
+  }
+
+  $copiados = 0;
+
+  while ($d = mysqli_fetch_assoc($qd)) {
+    $id_producto = (int)$d['id_producto'];
+    $cantidad = (float)$d['cantidad'];
+    $precio = (float)$d['precio_venta'];
+    $id_almacen = (int)($d['id_almacen'] ?? ($d['almacen'] ?? 0));
+    $id_vend_det = (int)($d['id_vendedor'] ?? $id_vendedor);
+
+    $qp = mysqli_query($con, "SELECT referencia, lote, caducidad FROM products WHERE id_producto = $id_producto LIMIT 1");
+    $pr = $qp ? mysqli_fetch_assoc($qp) : null;
+    $cve = mysqli_real_escape_string($con, (string)($d['referencia'] ?? ($pr['referencia'] ?? '')));
+    $lote = mysqli_real_escape_string($con, (string)($pr['lote'] ?? ''));
+    $caducidad = mysqli_real_escape_string($con, (string)($pr['caducidad'] ?? ''));
+
+    $sqlDet = "INSERT INTO detalle_fact_factura
+      (numero_fact_factura, id_producto, cantidad, precio_venta, id_almacen, id_vendedor, lote, caducidad, cve_producto, tipo_producto, date_created)
+      VALUES
+      ($id_fact, $id_producto, $cantidad, $precio, $id_almacen, $id_vend_det, '$lote', '$caducidad', '$cve', 'P', NOW())";
+
+    if (mysqli_query($con, $sqlDet)) {
+      $copiados++;
+    }
+  }
+
+  return ['ok' => true, 'copiados' => $copiados];
+}
+
 $id_remision = (int)($_POST['id_remision'] ?? 0);
 if ($id_remision <= 0) {
   echo json_encode(['ok' => false, 'error' => 'id_remision inválido']);
@@ -42,7 +79,34 @@ $qe = mysqli_query($con, "SELECT id_fact_facturas
   LIMIT 1");
 
 if ($ex = mysqli_fetch_assoc($qe)) {
-  echo json_encode(['ok' => true, 'id' => (int)$ex['id_fact_facturas'], 'reused' => true]);
+  $id_fact = (int)$ex['id_fact_facturas'];
+
+  // Asegura que el encabezado quede alineado con la remisión origen.
+  mysqli_query($con, "UPDATE fact_facturas
+    SET id_cliente = $id_cliente,
+        id_vendedor = $id_vendedor
+    WHERE id_fact_facturas = $id_fact");
+
+  $qc = mysqli_query($con, "SELECT COUNT(*) AS total
+    FROM detalle_fact_factura
+    WHERE numero_fact_factura = $id_fact");
+  $rc = $qc ? mysqli_fetch_assoc($qc) : ['total' => 0];
+
+  if ((int)($rc['total'] ?? 0) <= 0) {
+    $copiado = copiar_detalle_remision_a_factura($con, $id_remision, $id_fact, $id_vendedor);
+    if (!$copiado['ok']) {
+      echo json_encode(['ok' => false, 'error' => $copiado['error']]);
+      exit;
+    }
+    if ((int)($copiado['copiados'] ?? 0) <= 0) {
+      echo json_encode(['ok' => false, 'error' => 'La remision no tiene partidas para facturar']);
+      exit;
+    }
+    echo json_encode(['ok' => true, 'id' => $id_fact, 'reused' => true, 'copiados' => (int)$copiado['copiados']]);
+    exit;
+  }
+
+  echo json_encode(['ok' => true, 'id' => $id_fact, 'reused' => true]);
   exit;
 }
 
@@ -61,40 +125,19 @@ if (!mysqli_query($con, $sqlIns)) {
 $id_fact = (int)mysqli_insert_id($con);
 
 // 4) Copiar detalle de remisión -> detalle_fact_factura
-// Remisión detalle: detalle_factura WHERE numero_factura = $id_remision
-$qd = mysqli_query($con, "SELECT id_producto, cantidad, precio_venta, id_almacen, id_vendedor
-  FROM detalle_factura
-  WHERE numero_factura = $id_remision");
+$copiado = copiar_detalle_remision_a_factura($con, $id_remision, $id_fact, $id_vendedor);
 
-$copiados = 0;
-
-while ($d = mysqli_fetch_assoc($qd)) {
-  $id_producto = (int)$d['id_producto'];
-  $cantidad = (float)$d['cantidad'];
-  $precio = (float)$d['precio_venta'];
-  $id_almacen = (int)($d['id_almacen'] ?? 0);
-  $id_vend_det = (int)($d['id_vendedor'] ?? $id_vendedor);
-
-  // Referencia para cve_producto (si existe)
-  $qp = mysqli_query($con, "SELECT referencia FROM products WHERE id_producto = $id_producto LIMIT 1");
-  $pr = mysqli_fetch_assoc($qp);
-  $cve = mysqli_real_escape_string($con, (string)($pr['referencia'] ?? ''));
-
-  $sqlDet = "INSERT INTO detalle_fact_factura
-    (numero_fact_factura, id_producto, cantidad, precio_venta, id_almacen, id_vendedor, cve_producto, tipo_producto, date_created)
-    VALUES
-    ($id_fact, $id_producto, $cantidad, $precio, $id_almacen, $id_vend_det, '$cve', 'P', NOW())";
-
-  if (mysqli_query($con, $sqlDet)) {
-    $copiados++;
-  }
+if (!$copiado['ok']) {
+  mysqli_query($con, "DELETE FROM fact_facturas WHERE id_fact_facturas = $id_fact");
+  echo json_encode(['ok' => false, 'error' => $copiado['error']]);
+  exit;
 }
 
-if ($copiados <= 0) {
+if ((int)($copiado['copiados'] ?? 0) <= 0) {
   // Si no hay conceptos, mejor borrar el encabezado para no dejar basura
   mysqli_query($con, "DELETE FROM fact_facturas WHERE id_fact_facturas = $id_fact");
   echo json_encode(['ok' => false, 'error' => 'La remisión no tiene partidas para facturar']);
   exit;
 }
 
-echo json_encode(['ok' => true, 'id' => $id_fact, 'copiados' => $copiados]);
+echo json_encode(['ok' => true, 'id' => $id_fact, 'copiados' => (int)$copiado['copiados']]);

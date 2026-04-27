@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-	//include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
+	include('is_logged.php');
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 	require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
@@ -8,7 +8,6 @@ error_reporting(0);
 	$action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
 	
 	if($action == 'ajax'){
-		echo "<script>console.log('estamos dentro!!!')</script>";
         $sql="SELECT * FROM autos   ";
 		$query = mysqli_query($con, $sql);		//loop through fetched data
 		//if ($numrows<0)

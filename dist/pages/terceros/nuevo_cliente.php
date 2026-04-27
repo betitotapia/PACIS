@@ -391,8 +391,36 @@ include("../modal/registro_usuarios.php");
     }
   });
 
-  // Validación y envío (placeholder)
- const form = document.getElementById('clienteForm');
+  // Chequeo en tiempo real: RFC duplicado
+  const rfcInput = el('rfc');
+  const rfcFeedback = rfcInput?.nextElementSibling;
+  const RFC_ORIGINAL_MSG = rfcFeedback?.textContent || 'Indica el RFC.';
+
+  rfcInput?.addEventListener('blur', async () => {
+    const rfc = rfcInput.value.trim().toUpperCase();
+    rfcInput.setCustomValidity('');
+    if (rfcFeedback) rfcFeedback.textContent = RFC_ORIGINAL_MSG;
+    if (rfc.length < 12) return;
+    try {
+      const r = await fetch(`../../ajax/verificar_rfc.php?rfc=${encodeURIComponent(rfc)}`);
+      const data = await r.json();
+      if (data.exists) {
+        rfcInput.setCustomValidity('duplicado');
+        if (rfcFeedback) rfcFeedback.textContent = `RFC ya registrado con: ${data.nombre}`;
+        rfcInput.closest('form')?.classList.add('was-validated');
+      }
+    } catch(e) { /* ignora errores de red */ }
+  });
+
+  rfcInput?.addEventListener('input', () => {
+    if (rfcInput.validity.customError) {
+      rfcInput.setCustomValidity('');
+      if (rfcFeedback) rfcFeedback.textContent = RFC_ORIGINAL_MSG;
+    }
+  });
+
+  // Validación y envío
+  const form = document.getElementById('clienteForm');
 form?.addEventListener('submit', async (e)=>{
   e.preventDefault();
   e.stopPropagation();

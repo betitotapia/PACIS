@@ -192,8 +192,8 @@
 			$item=1;
 			$sumador_total=0;
 
-			$sql=mysqli_query($con, "SELECT f.id_detalle, f.numero_factura, f.id_producto, f.cantidad, f.precio_venta,f.id_vendedor,  
-      p.id_producto, p.referencia, p.descripcion, p.existencias, p.lote,p.caducidad,p.precio_producto,p.id_almacen,
+			$sql=mysqli_query($con, "SELECT f.id_detalle, f.numero_factura, f.id_producto, f.cantidad, f.precio_venta,f.id_vendedor, f.referencia AS referencia_mostrada,
+      p.id_producto, p.descripcion, p.existencias, p.lote,p.caducidad,p.precio_producto,p.id_almacen,
       a.id_almacen, a.numero_almacen, a.descripcion as nombre_almacen 
       FROM  detalle_factura f
       INNER JOIN products p ON  f.id_producto = p.id_producto
@@ -203,7 +203,7 @@
 			while ($row = mysqli_fetch_array($sql)) {
 			$id_tmp = $row["id_detalle"];
 				$id_producto = $row["id_producto"];
-				$referencia = $row['referencia'];
+        $referencia = $row['referencia_mostrada'];
 				$almacen = $row['id_almacen'];
 				$lote = $row['lote'];
 				$nombre_almacen = $row['nombre_almacen'];

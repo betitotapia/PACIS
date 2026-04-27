@@ -7,7 +7,7 @@ function load_recepciones() {
 }
 
 function cancelar_recepcion(id_recepcion){
-  if(!confirm("¿Deseas CANCELAR esta recepción?\nEsta acción no elimina inventario.")) return;
+  if(!confirm("¿Deseas CANCELAR esta recepción?\nEsta acción revertirá las existencias de todos los productos recibidos.")) return;
 
   $.ajax({
     type: "POST",

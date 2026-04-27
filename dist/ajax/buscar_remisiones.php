@@ -15,7 +15,6 @@
 		if ($estado_factura==0 ){
 			$update_factura="UPDATE facturas SET status_fact=2 WHERE id_factura='".$numero_factura."'";
 			$update1=mysqli_query($con,$update_factura);
-			echo"<script>console.log('work:se ejecuto codigo hasta aqui ".$estado_factura."');</script>";
 				?>
  				<script>Swal.fire("OK!", "Remisión Cancelada Exitosamente!", "success");</script> 
 <?php
@@ -37,12 +36,12 @@
 		 $sql_usuario1=mysqli_query($con,"select * from users where user_id ='$usuario'");
 		 $rj_usuario1=mysqli_fetch_array($sql_usuario1);
 		 $rj_usuario1['is_admin'];
-		 echo"<script>console.log('work:se ejecuto codigo usuario: ".$usuario."');</script>";
  if ($rj_usuario1['is_admin']==2){
 		$status=1;
 		
 		$sTable2 = "SELECT f.id_factura, f.numero_factura, f.fecha_factura, f.id_cliente, f.id_vendedor, f.total_venta, f.estado_factura,
 			f.compra, f.cotizacion, f.doctor, f.paciente, f.material, f.pago, f.d_factura, f.observaciones, f.status_fact,
+			f.serie_remision, f.folio_remision,
 			c.id_cliente,  c.nombre_cliente, c.rfc, c.calle, c.num_int, c.num_ext, c.colonia, c.telefono, c.email,
 			u.user_id, u.nombre, u.user_name, u.user_email, u.letra, u.is_admin FROM facturas f LEFT JOIN clientes c ON c.id_cliente = f.id_cliente
 			INNER JOIN users u ON u.user_id = f.id_vendedor
@@ -161,7 +160,10 @@
             <td class="columnas">
                 <ul>
                     <li><?php echo substr($nombre_cliente ?? '', 0, 25);?></li>
-                    <li>P<?php echo $letra_ventas."-".$numero_factura; ?></li>
+                    <!-- <li>P<?php echo $letra_ventas."-".$numero_factura; ?></li> -->
+                    <?php if (!empty($row['serie_remision']) && !empty($row['folio_remision'])): ?>
+                    <li><span class="badge bg-secondary" style="font-size:16px;"><?php echo htmlspecialchars($row['serie_remision']).'-'.(int)$row['folio_remision']; ?></span></li>
+                    <?php endif; ?>
             </td>
             <!--<td class="hidden-xs columnas"><?php echo $fecha; echo"<br>Hora: $hora";?></td>-->
             <td class="d-none d-md-table-cell columnas"><?php echo $fecha;?></td>

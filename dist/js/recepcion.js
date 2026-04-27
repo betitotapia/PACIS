@@ -129,10 +129,14 @@ function agregar_por_codigo_barras(){
         const costo  = p[5] || "0";
         const exento = p[6] || "0";
         const cod    = p[7] || codigo;
+        const alt1   = p[8] || "";
+        const alt2   = p[9] || "";
 
         // 🔁 Soporta ambos nombres de inputs (por si tu modal usa IDs distintos)
         $("#np_codigo_gs1, #modalCodigo").val(cod);
         $("#np_referencia, #modalReferencia").val(ref);
+        $("#np_cve_alterna_1").val(alt1);
+        $("#np_cve_alterna_2").val(alt2);
         $("#np_lote, #modalLote").val(lote);
         $("#np_caducidad, #modalCaducidad").val(cad);
 
@@ -178,6 +182,8 @@ function guardar_nuevo_producto_desde_gs1() {
   // IDs EXACTOS de tu modal (nueva.php)
   const codigo     = ($("#np_codigo_gs1").val() || "").trim();
   const referencia = ($("#np_referencia").val() || "").trim();
+  const cve_alterna_1 = ($("#np_cve_alterna_1").val() || "").trim();
+  const cve_alterna_2 = ($("#np_cve_alterna_2").val() || "").trim();
   const descripcion= ($("#np_descripcion").val() || "").trim();
   const lote       = ($("#np_lote").val() || "").trim();
   const caducidad  = ($("#np_caducidad").val() || "").trim();
@@ -205,6 +211,8 @@ function guardar_nuevo_producto_desde_gs1() {
       modo: "GUARDAR",
       codigo: codigo,
       referencia: referencia,
+      cve_alterna_1: cve_alterna_1,
+      cve_alterna_2: cve_alterna_2,
       descripcion: descripcion,
       lote: lote,
       caducidad: caducidad,
@@ -231,6 +239,8 @@ function guardar_nuevo_producto_desde_gs1() {
         $("#codigo_gs1").val("");
         $("#np_codigo_gs1").val("");
         $("#np_referencia").val("");
+        $("#np_cve_alterna_1").val("");
+        $("#np_cve_alterna_2").val("");
         $("#np_descripcion").val("");
         $("#np_lote").val("");
         $("#np_caducidad").val("");

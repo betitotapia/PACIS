@@ -1,9 +1,8 @@
 <?php
-	//include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
+	include('is_logged.php');
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 	require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
-	$_SESSION["user_id"]=1;
 	//Archivo de funciones PHP
 	//include("../funciones.php");
 	$action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
@@ -61,7 +60,6 @@
 					$sql_usuario=mysqli_query($con,"select is_admin from users where user_id ='$session_id'");
 					$rj_usuario=mysqli_fetch_array($sql_usuario);
 					$is_admin=$rj_usuario['is_admin'];
-					echo "<script>console.log('work:se ejecuto codigo usuario: ".$session_id."');</script>"
 		
 			?>
 			<div class="table-responsive">

@@ -87,6 +87,8 @@ $id_almacen = isset($_POST['id_almacen']) ? (int)$_POST['id_almacen'] : 0;
 
 // Datos capturados desde modal (GUARDAR)
 $ref_capt   = isset($_POST['referencia'])  ? trim($_POST['referencia'])  : '';
+$alt1_capt  = isset($_POST['cve_alterna_1']) ? trim($_POST['cve_alterna_1']) : '';
+$alt2_capt  = isset($_POST['cve_alterna_2']) ? trim($_POST['cve_alterna_2']) : '';
 $desc_capt  = isset($_POST['descripcion']) ? trim($_POST['descripcion']) : '';
 $lote_capt  = isset($_POST['lote']) ? trim($_POST['lote']) : '';
 $cad_capt   = isset($_POST['caducidad']) ? trim($_POST['caducidad']) : '';
@@ -113,15 +115,22 @@ if ($modo === 'PARSE') {
     $desc_sug = '';
     $costo_sug = '0';
     $exento_sug = '0';
+    $alt1_sug = '';
+    $alt2_sug = '';
 
     if ($ref !== '') {
         $ref_sql = mysqli_real_escape_string($con, $ref);
-        $q = mysqli_query($con, "SELECT descripcion, costo, exento_iva FROM products WHERE referencia='$ref_sql' LIMIT 1");
+        $q = mysqli_query($con, "SELECT descripcion, costo, exento_iva, cve_alterna_1, cve_alterna_2
+          FROM products
+          WHERE referencia='$ref_sql' OR cve_alterna_1='$ref_sql' OR cve_alterna_2='$ref_sql'
+          LIMIT 1");
         if ($q && mysqli_num_rows($q) > 0) {
             $rw = mysqli_fetch_assoc($q);
             $desc_sug = $rw['descripcion'] ?? '';
             $costo_sug = isset($rw['costo']) ? (string)$rw['costo'] : '0';
             $exento_sug = isset($rw['exento_iva']) ? (string)$rw['exento_iva'] : '0';
+            $alt1_sug = $rw['cve_alterna_1'] ?? '';
+            $alt2_sug = $rw['cve_alterna_2'] ?? '';
         }
     }
 
@@ -136,7 +145,7 @@ if ($modo === 'PARSE') {
     }
 
     // Siempre regresamos NECESITA_DATOS para abrir modal SIEMPRE
-    echo "NECESITA_DATOS|$ref|$lote|$cad|$desc_sug|$costo_sug|$exento_sug|$codigo";
+    echo "NECESITA_DATOS|$ref|$lote|$cad|$desc_sug|$costo_sug|$exento_sug|$codigo|$alt1_sug|$alt2_sug";
     exit;
 }
 
@@ -162,6 +171,8 @@ if ($lote_capt === '' || $cad_capt === '') {
 if ($cad_capt === '') $cad_capt = '0000-00-00';
 
 $ref_sql  = mysqli_real_escape_string($con, $ref_capt);
+$alt1_sql = mysqli_real_escape_string($con, $alt1_capt);
+$alt2_sql = mysqli_real_escape_string($con, $alt2_capt);
 $desc_sql = mysqli_real_escape_string($con, $desc_capt);
 $lote_sql = mysqli_real_escape_string($con, $lote_capt);
 $cad_sql  = mysqli_real_escape_string($con, $cad_capt);
@@ -180,6 +191,8 @@ if ($id_oc > 0) {
             cantidad_tmp    = $cantidad,
             costo_tmp       = $costo,
             exento_iva_tmp  = $exento_iva,
+                        cve_alterna_1_tmp = '$alt1_sql',
+                        cve_alterna_2_tmp = '$alt2_sql',
             id_almacen_tmp  = $id_almacen
         WHERE session_id = '$session_id'
           AND id_oc = $id_oc
@@ -191,7 +204,12 @@ if ($id_oc > 0) {
 
     if (mysqli_affected_rows($con) > 0) {
         // Mantener exento_iva “maestro” si el producto existe
-        mysqli_query($con, "UPDATE products SET exento_iva = $exento_iva WHERE referencia='$ref_sql' LIMIT 1");
+                mysqli_query($con, "UPDATE products
+                    SET exento_iva = $exento_iva,
+                            cve_alterna_1 = COALESCE(NULLIF('$alt1_sql',''), cve_alterna_1),
+                            cve_alterna_2 = COALESCE(NULLIF('$alt2_sql',''), cve_alterna_2)
+                    WHERE referencia='$ref_sql' OR cve_alterna_1='$ref_sql' OR cve_alterna_2='$ref_sql'
+                    LIMIT 1");
         echo "OK";
         exit;
     }
@@ -200,9 +218,9 @@ if ($id_oc > 0) {
 // Si no actualizó (sin OC o no encontró pendiente), inserta nuevo renglón
 mysqli_query($con, "
     INSERT INTO tmp_recepcion
-    (referencia_tmp, descripcion_tmp, lote_tmp, caducidad_tmp, cantidad_tmp, costo_tmp, exento_iva_tmp, id_almacen_tmp, id_oc, session_id)
+    (referencia_tmp, cve_alterna_1_tmp, cve_alterna_2_tmp, descripcion_tmp, lote_tmp, caducidad_tmp, cantidad_tmp, costo_tmp, exento_iva_tmp, id_almacen_tmp, id_oc, session_id)
     VALUES
-    ('$ref_sql', '$desc_sql', '$lote_sql', '$cad_sql', $cantidad, $costo, $exento_iva, $id_almacen, " . ($id_oc > 0 ? $id_oc : "NULL") . ", '$session_id')
+    ('$ref_sql', '$alt1_sql', '$alt2_sql', '$desc_sql', '$lote_sql', '$cad_sql', $cantidad, $costo, $exento_iva, $id_almacen, " . ($id_oc > 0 ? $id_oc : "NULL") . ", '$session_id')
 ");
 
 if (mysqli_errno($con)) {
@@ -210,6 +228,11 @@ if (mysqli_errno($con)) {
     exit;
 }
 
-mysqli_query($con, "UPDATE products SET exento_iva = $exento_iva WHERE referencia='$ref_sql' LIMIT 1");
+mysqli_query($con, "UPDATE products
+    SET exento_iva = $exento_iva,
+            cve_alterna_1 = COALESCE(NULLIF('$alt1_sql',''), cve_alterna_1),
+            cve_alterna_2 = COALESCE(NULLIF('$alt2_sql',''), cve_alterna_2)
+    WHERE referencia='$ref_sql' OR cve_alterna_1='$ref_sql' OR cve_alterna_2='$ref_sql'
+    LIMIT 1");
 
 echo "OK";

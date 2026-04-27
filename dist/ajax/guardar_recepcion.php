@@ -45,6 +45,18 @@ try {
     if ($id_proveedor <= 0) throw new Exception("Debe seleccionar un proveedor válido.");
     if ($id_almacen_hdr <= 0) throw new Exception("Debe seleccionar un almacén válido.");
 
+    // Verifica que la OC vinculada no esté cancelada ni cerrada
+    if ($id_oc > 0) {
+        $q_oc = mysqli_query($con, "SELECT estatus FROM ordenes_compra WHERE id_oc = $id_oc LIMIT 1");
+        if (!$q_oc || mysqli_num_rows($q_oc) === 0) {
+            throw new Exception("La orden de compra seleccionada no existe.");
+        }
+        $r_oc = mysqli_fetch_assoc($q_oc);
+        if (!in_array($r_oc['estatus'], ['ABIERTA', 'PARCIAL'])) {
+            throw new Exception("La orden de compra está {$r_oc['estatus']} y no se puede recibir.");
+        }
+    }
+
     // ─────────────────────────────────────
 // VALIDAR QUE NO HAYA RENGLONES SIN LOTE O CADUCIDAD
 // ─────────────────────────────────────
@@ -61,7 +73,7 @@ try {
         ");
 
         if (!$chk) {
-            echo "Error al validar datos de los productos: " . mysqli_error($con);
+            echo "Error al validar los datos de los productos.";
             exit;
         }
 
@@ -131,6 +143,8 @@ try {
     while ($row = mysqli_fetch_assoc($res_tmp)) {
 
         $referencia  = mysqli_real_escape_string($con, $row['referencia_tmp']);
+        $cve_alterna_1 = mysqli_real_escape_string($con, (string)($row['cve_alterna_1_tmp'] ?? ''));
+        $cve_alterna_2 = mysqli_real_escape_string($con, (string)($row['cve_alterna_2_tmp'] ?? ''));
         $descripcion = mysqli_real_escape_string($con, $row['descripcion_tmp']);
         $lote        = mysqli_real_escape_string($con, $row['lote_tmp']);
         $caducidad   = mysqli_real_escape_string($con, $row['caducidad_tmp']);
@@ -162,7 +176,7 @@ try {
             $con,
             "SELECT id_producto
              FROM products
-             WHERE referencia = '$referencia'
+                         WHERE (referencia = '$referencia' OR cve_alterna_1 = '$referencia' OR cve_alterna_2 = '$referencia')
                AND lote = '$lote'
                AND id_almacen = $id_almacen
              LIMIT 1
@@ -177,6 +191,8 @@ try {
                 $con,
                 "UPDATE products
                  SET existencias = existencias + $cantidad,
+                     cve_alterna_1 = COALESCE(NULLIF('$cve_alterna_1',''), cve_alterna_1),
+                     cve_alterna_2 = COALESCE(NULLIF('$cve_alterna_2',''), cve_alterna_2),
                      ultima_modificacion = NOW()
                  WHERE id_producto = $id_producto"
             );
@@ -185,9 +201,9 @@ try {
             mysqli_query(
                 $con,
                 "INSERT INTO products
-                 (barcode, referencia, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen, estatus, ultima_modificacion)
+                 (barcode, referencia, cve_alterna_1, cve_alterna_2, descripcion, existencias, lote, caducidad, costo, precio_producto, id_almacen, estatus, ultima_modificacion)
                  VALUES
-                 ('', '$referencia', '$descripcion', $cantidad, '$lote', '$caducidad', $costo_unit, 0, $id_almacen, 1, NOW())"
+                 ('', '$referencia', NULLIF('$cve_alterna_1',''), NULLIF('$cve_alterna_2',''), '$descripcion', $cantidad, '$lote', '$caducidad', $costo_unit, 0, $id_almacen, 1, NOW())"
             );
         }
 
@@ -260,6 +276,13 @@ try {
      * COMMIT
      * ========================================================= */
     mysqli_commit($con);
+
+    // Notificación (best-effort: si la tabla aún no existe no afecta la recepción)
+    try {
+        $folio_esc = mysqli_real_escape_string($con, $folio);
+        $msg_esc   = mysqli_real_escape_string($con, "Recepción $folio_esc registrada");
+        mysqli_query($con, "INSERT INTO notificaciones (tipo, mensaje, id_referencia, folio) VALUES ('recepcion', '$msg_esc', $id_recepcion, '$folio_esc')");
+    } catch (Throwable $t) { /* ignorar — la recepción ya quedó guardada */ }
 
     echo "OK|$id_recepcion|$folio";
     exit;

@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_login_status']) || $_SESSION['user_login_status'] != 
   exit;
 }
 
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 include("../config/db.php");
 include("../config/conexion.php");

@@ -30,7 +30,6 @@ if (isset($_GET['id']))//codigo elimina un elemento del array
 {
 $id_tmp=intval($_GET['id']);	
 $delete=mysqli_query($con, "DELETE FROM tmp WHERE id_tmp='".$id_tmp."'");
-echo"<script>console.log('se borro el id: ".$id_tmp."');</script>";
 }
 $simbolo_moneda=get_row('perfil','moneda', 'id_perfil', 1);
 

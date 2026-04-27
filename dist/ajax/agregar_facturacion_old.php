@@ -48,7 +48,10 @@ if (mysqli_num_rows($sql_check) > 0) {
      	$descuento = mysqli_query($con, "UPDATE products SET existencias = '$existencias' WHERE id_producto = '$id'");
 	}else{
 		
-	$insert_detail = mysqli_query($con, "INSERT INTO detalle_factura VALUES (NULL,'$numero_factura','$id',NULL,'$referencia', '$descripcion', '$lote','$caducidad','$almacen','$cantidad','$precio_venta','$id_vendedor')");
+	$insert_detail = mysqli_query($con, "INSERT INTO detalle_factura
+		(numero_factura, id_producto, iva, referencia, referencia_fuente, descripcion, lote, caducidad, almacen, cantidad, precio_venta, id_vendedor)
+		VALUES
+		('$numero_factura','$id',NULL,'$referencia','ORIGINAL', '$descripcion', '$lote','$caducidad','$almacen','$cantidad','$precio_venta','$id_vendedor')");
 	$sql_cantidad= mysqli_query($con, "SELECT existencias FROM products WHERE id_producto = '$id'");
 	$row_cantidad = mysqli_fetch_array($sql_cantidad);
 	$existencias = $row_cantidad['existencias'] - $cantidad;

@@ -15,7 +15,6 @@
 		if ($estado_factura==0 ){
 			$update_factura="UPDATE facturas SET status_fact=2 WHERE id_factura='".$numero_factura."'";
 			$update1=mysqli_query($con,$update_factura);
-			echo"<script>console.log('work:se ejecuto codigo hasta aqui ".$estado_factura."');</script>";
 				?>
 <div class="alert alert-success alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
@@ -45,7 +44,6 @@
 		 $sql_usuario1=mysqli_query($con,"select * from users where user_id ='$usuario'");
 		 $rj_usuario1=mysqli_fetch_array($sql_usuario1);
 		 $rj_usuario1['is_admin'];
-		 echo"<script>console.log('work:se ejecuto codigo usuario: ".$usuario."');</script>";
  if ($rj_usuario1['is_admin']==2){
 		$status=1;
 		

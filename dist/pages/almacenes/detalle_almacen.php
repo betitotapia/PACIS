@@ -52,6 +52,9 @@ include '../aside_menu.php';
 		echo "<script>console.log('work evaluando:".$session_id2."');</script>";	
 		?>		 
 			<div>
+				<button type="button" class="btn btn-success" onclick="abrir_modal_nuevo_producto_almacen();">
+					<span class="glyphicon glyphicon-plus"></span> Agregar producto manual
+				</button>
 				
 			 <?php 
 			//  if ($rj_usuario1['is_admin'] != 3 && $rj_usuario1['is_admin'] != 4){
@@ -98,6 +101,7 @@ include '../aside_menu.php';
 	<?php
 include("../footer.php");
 include("../modal/editar_productos.php");
+include("../modal/producto_nuevo.php");
 	?>
 	<script type="text/javascript" src="../../js/VentanaCentrada.js"></script>
 	<script type="text/javascript" src="../../js/detalle_almacen.js"> </script>
@@ -141,6 +145,8 @@ if (Swal.fire({
 	 
 	$id_producto=$("#id_producto_"+id).val();
 	$referencia=$("#referencia_"+id).val();
+	$cve_alterna_1=$("#cve_alterna_1_"+id).val();
+	$cve_alterna_2=$("#cve_alterna_2_"+id).val();
 	$descripcion=$("#descripcion_"+id).val();
 	$lote=$("#lote_"+id).val();
 	$caducidad=$("#caducidad_"+id).val();
@@ -150,6 +156,8 @@ if (Swal.fire({
 	
 	$("#modal_id_producto").val($id_producto);
 	$("#modalReferencia").val($referencia);
+	$("#modalCveAlterna1").val($cve_alterna_1);
+	$("#modalCveAlterna2").val($cve_alterna_2);
 	$("#modalDescripcion").val($descripcion);
 	$("#modalLote").val($lote);
 	$("#modalCaducidad").val($caducidad);
@@ -186,6 +194,50 @@ if (Swal.fire({
 
 
 
+
+
+	function abrir_modal_nuevo_producto_almacen(){
+		var id_almacen = $("#id_almacen").val();
+		$("#np_id_almacen").val(id_almacen);
+		$("#form_nuevo_producto_almacen")[0].reset();
+		$("#np_existencias").val(1);
+		$("#np_costo").val(0);
+		$("#np_precio").val(0);
+		$("#resultado_nuevo_producto_almacen").html("");
+
+		if (window.bootstrap && bootstrap.Modal) {
+			bootstrap.Modal.getOrCreateInstance(document.getElementById('modalNuevoProductoAlmacen')).show();
+		} else {
+			$("#modalNuevoProductoAlmacen").modal('show');
+		}
+	}
+
+	function guardar_producto_manual_almacen(){
+		var parametros = $("#form_nuevo_producto_almacen").serialize();
+		$.ajax({
+			type: "POST",
+			url: "../../ajax/agregar_producto_manual_almacen.php",
+			data: parametros,
+			beforeSend: function(){
+				$("#resultado_nuevo_producto_almacen").html("Guardando...");
+			},
+			success: function(respuesta){
+				if ((respuesta || "").indexOf("OK|") === 0){
+					$("#resultado_nuevo_producto_almacen").html("<div class='alert alert-success'>Producto guardado correctamente.</div>");
+					load(1);
+					setTimeout(function(){
+						if (window.bootstrap && bootstrap.Modal) {
+							bootstrap.Modal.getOrCreateInstance(document.getElementById('modalNuevoProductoAlmacen')).hide();
+						} else {
+							$("#modalNuevoProductoAlmacen").modal('hide');
+						}
+					}, 600);
+				}else{
+					$("#resultado_nuevo_producto_almacen").html("<div class='alert alert-danger'>" + respuesta + "</div>");
+				}
+			}
+		});
+	}
 
    const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
       const Default = {

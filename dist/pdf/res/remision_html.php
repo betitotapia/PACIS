@@ -165,18 +165,18 @@ table.page_footer {width: 100%; border: none; background-color: white; padding: 
 $nums=1;
 $item=1;
 $sumador_total=0;
-$sql=mysqli_query($con, "SELECT * FROM  detalle_factura INNER JOIN products ON products.id_producto = detalle_factura.id_producto 
+$sql=mysqli_query($con, "SELECT detalle_factura.referencia AS referencia_mostrada, detalle_factura.lote AS lote_mostrado, detalle_factura.caducidad AS caducidad_mostrada, detalle_factura.*, products.*, almacenes.* FROM  detalle_factura INNER JOIN products ON products.id_producto = detalle_factura.id_producto 
 INNER JOIN almacenes ON almacenes.id_almacen = detalle_factura.almacen
 WHERE detalle_factura.numero_factura = '" . $numero_factura . "' AND id_vendedor ='" . $id_vendedor . "' order by detalle_factura.id_detalle asc");
 
 while ($row = mysqli_fetch_array($sql)) {
 $id_tmp = $row["id_detalle"];
 	$id_producto = $row["id_producto"];
-	$referencia = $row['referencia'];
+	$referencia = $row['referencia_mostrada'];
 	$almacen = $row['id_almacen'];
-	$lote = $row['lote'];
+	$lote = $row['lote_mostrado'];
 	$nombre_almacen = $row['descripcion'];
-	$caducidad=$row['caducidad'];
+	$caducidad=$row['caducidad_mostrada'];
 	$cantidad = $row['cantidad'];
 	$nombre_producto = $row['descripcion'];
 	$precio_venta = $row['precio_venta'];

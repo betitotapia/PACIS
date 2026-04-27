@@ -1,11 +1,11 @@
 <?php
 	error_reporting(E_ALL ^ E_NOTICE);
 	session_start();
-	if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
+	if (!isset($_SESSION['user_login_status']) || $_SESSION['user_login_status'] != 1) {
         header("location: ../../login.php");
 		exit;
     }
-	ini_set('display_errors', 1);
+	ini_set('display_errors', 0);
 	
 	/* Connect To Database*/
 	include("../config/db.php");

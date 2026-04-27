@@ -8,7 +8,6 @@ error_reporting(0);
 	$action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
     if (isset($_GET['id_almacen'])){
         $id_almacen=intval($_GET['id_almacen']);
-		echo "<script>console.log('el id es:".$id_almacen."');</script>";
     } else {
         $id_almacen=0;
     }
@@ -69,6 +68,8 @@ error_reporting(0);
 			  <table class="table  table-striped" id="myTable">
 				<tr  class="info">
 					<th class="" >SKU</th>
+					<th class="">CLAVE ALTERNA 1</th>
+					<th class="">CLAVE ALTERNA 2</th>
 					<th class="">DESCRIPCION</th>
 				    <th class=''>LOTE</th>
 					<th>CADUCIDAD</th>
@@ -87,6 +88,8 @@ error_reporting(0);
 				while ($row=mysqli_fetch_array($query)){
 						$id_producto=$row['id_producto'];
                         $referencia=$row['referencia'];
+						$cve_alterna_1=$row['cve_alterna_1'] ?? '';
+						$cve_alterna_2=$row['cve_alterna_2'] ?? '';
                         $descripcion=$row['descripcion'];
                         $lote=$row['lote'];
                         $caducidad=$row['caducidad'];
@@ -100,6 +103,8 @@ error_reporting(0);
 						<td class=" ">
 						<input type="hidden" value="<?php echo $id_producto;?>" id="id_producto_<?php echo $id_producto;?>">
 						<input type="hidden" value="<?php echo $referencia;?>" id="referencia_<?php echo $id_producto;?>">	
+						<input type="hidden" value="<?php echo htmlspecialchars($cve_alterna_1);?>" id="cve_alterna_1_<?php echo $id_producto;?>">
+						<input type="hidden" value="<?php echo htmlspecialchars($cve_alterna_2);?>" id="cve_alterna_2_<?php echo $id_producto;?>">
 						<input type="hidden" value="<?php echo $descripcion;?>" id="descripcion_<?php echo $id_producto;?>">
 						<input type="hidden" value="<?php echo $lote;?>" id="lote_<?php echo $id_producto;?>">
 						<input type="hidden" value="<?php echo $caducidad;?>" id="caducidad_<?php echo $id_producto;?>">
@@ -117,8 +122,10 @@ error_reporting(0);
 						
 						<input type="hidden" value="<?php echo $precio;?>" id="precio_<?php echo $id_producto;?>">
 
-						<?php echo $referencia; ?></td>
-						<td class=" "><?php echo $descripcion; ?></td>
+						<?php echo htmlspecialchars($referencia); ?></td>
+						<td class=" "><?php echo htmlspecialchars($cve_alterna_1); ?></td>
+						<td class=" "><?php echo htmlspecialchars($cve_alterna_2); ?></td>
+						<td class=" "><?php echo htmlspecialchars($descripcion); ?></td>
 						<td class=" "><?php echo $lote; ?></td>
 						<td class=" "><?php echo $caducidad; ?></td>
 						<td class=" "><?php echo $existencias; ?></td>

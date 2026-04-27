@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-	//include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
+	include('is_logged.php');
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
 	require_once ("../config/conexion.php");//Contiene funcion que conecta a la base de datos
@@ -134,7 +134,6 @@ if ($rj_usuario1['is_admin']!=2){
 						$nombre_vendedor=$row['nombre'];
 						$estado_factura=$row['estado_factura'];
 
-						echo"<script>console.log('work:se ejecuto codigo de usuario ".$id_factura."');</script>";
 						/*if ($estado_factura==1){$text_estado="Pagada";$label_class='label-success';}
 						else{$text_estado="Pendiente";$label_class='label-warning';}*/
 

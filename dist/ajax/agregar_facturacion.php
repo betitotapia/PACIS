@@ -7,6 +7,54 @@ require_once("../config/conexion.php"); //Contiene funcion que conecta a la base
 $numero_factura = $_POST['numero_factura'];
 $id_vendedor = $_POST['id_vendedor'];
 
+function obtener_referencia_para_cliente($con, $id_producto, $numero_factura, $id_vendedor, $referencia_manual = '') {
+	$id_producto = (int)$id_producto;
+	$numero_factura = (int)$numero_factura;
+	$id_vendedor = (int)$id_vendedor;
+
+	$qProd = mysqli_query($con, "SELECT referencia, cve_alterna_1, cve_alterna_2 FROM products WHERE id_producto = $id_producto LIMIT 1");
+	$prod = $qProd ? mysqli_fetch_assoc($qProd) : null;
+
+	$referencia_original = trim((string)($prod['referencia'] ?? ''));
+	$alt1 = trim((string)($prod['cve_alterna_1'] ?? ''));
+	$alt2 = trim((string)($prod['cve_alterna_2'] ?? ''));
+
+	$tipo = 'ORIGINAL';
+	$qCli = mysqli_query($con, "SELECT c.tipo_referencia
+		FROM facturas f
+		INNER JOIN clientes c ON c.id_cliente = f.id_cliente
+		WHERE f.numero_factura = $numero_factura AND f.id_vendedor = $id_vendedor
+		LIMIT 1");
+	if ($qCli && mysqli_num_rows($qCli) > 0) {
+		$rwCli = mysqli_fetch_assoc($qCli);
+		if (!empty($rwCli['tipo_referencia'])) {
+			$tipo = strtoupper(trim((string)$rwCli['tipo_referencia']));
+		}
+	}
+
+	$referencia = $referencia_original;
+	$fuente = 'ORIGINAL';
+	if ($tipo === 'ALTERNA_1' && $alt1 !== '') {
+		$referencia = $alt1;
+		$fuente = 'ALTERNA_1';
+	} elseif ($tipo === 'ALTERNA_2' && $alt2 !== '') {
+		$referencia = $alt2;
+		$fuente = 'ALTERNA_2';
+	}
+
+	$referencia_manual = trim((string)$referencia_manual);
+	$es_manual_real = $referencia_manual !== ''
+		&& $referencia_manual !== $referencia_original
+		&& $referencia_manual !== $alt1
+		&& $referencia_manual !== $alt2;
+	if ($es_manual_real) {
+		$referencia = $referencia_manual;
+		$fuente = 'MANUAL';
+	}
+
+	return ['referencia' => $referencia, 'fuente' => $fuente];
+}
+
 if(isset($_POST['id']) &&
     isset($_POST['cantidad']) &&
     isset($_POST['precio_venta']) &&
@@ -27,9 +75,12 @@ if(isset($_POST['id']) &&
 	$caducidad = $_POST['caducidad'];
 	$lote = $_POST['lote'];
 	$descripcion = $_POST['descripcion'];
+	$ref_data = obtener_referencia_para_cliente($con, $id, $numero_factura, $id_vendedor, $referencia);
+	$referencia_resuelta = mysqli_real_escape_string($con, $ref_data['referencia']);
+	$referencia_fuente = mysqli_real_escape_string($con, $ref_data['fuente']);
 
 	
-if (!empty($id) and !empty($cantidad) and !empty($precio_venta) and !empty($lote) and !empty($referencia) and !empty($descripcion) and !empty($almacen)) {
+if (!empty($id) and !empty($cantidad) and !empty($precio_venta) and !empty($lote) and !empty($descripcion) and !empty($almacen)) {
 
 	
 $sql_check = mysqli_query($con, "SELECT cantidad FROM detalle_factura 
@@ -48,7 +99,10 @@ if (mysqli_num_rows($sql_check) > 0) {
      	$descuento = mysqli_query($con, "UPDATE products SET existencias = '$existencias' WHERE id_producto = '$id'");
 	}else{
 		
-	$insert_detail = mysqli_query($con, "INSERT INTO detalle_factura VALUES (NULL,'$numero_factura','$id',NULL,'$referencia', '$descripcion', '$lote','$caducidad','$almacen','$cantidad','$precio_venta','$id_vendedor')");
+	$insert_detail = mysqli_query($con, "INSERT INTO detalle_factura
+		(numero_factura, id_producto, iva, referencia, referencia_fuente, descripcion, lote, caducidad, almacen, cantidad, precio_venta, id_vendedor)
+		VALUES
+		('$numero_factura','$id',NULL,'$referencia_resuelta','$referencia_fuente', '$descripcion', '$lote','$caducidad','$almacen','$cantidad','$precio_venta','$id_vendedor')");
 	$sql_cantidad= mysqli_query($con, "SELECT existencias FROM products WHERE id_producto = '$id'");
 	$row_cantidad = mysqli_fetch_array($sql_cantidad);
 	$existencias = $row_cantidad['existencias'] - $cantidad;

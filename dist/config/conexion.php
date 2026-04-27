@@ -8,10 +8,15 @@
         die("Conexión falló: ".mysqli_connect_errno()." : ". mysqli_connect_error());
     }
 
-$host = '192.185.131.136';
-$db   = 'andres58_pacis';
-$user = 'andres58_sistemas';
-$pass = 'Pacis#.2025';
+// $host = '192.185.131.136';
+// $db   = 'andres58_pacis';
+// $user = 'andres58_sistemas';
+// $pass = 'Pacis#.2025';
+// $charset = 'utf8mb4';
+$host = 'localhost';
+$db   = 'pacis';
+$user = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 // Configuración de rutas
