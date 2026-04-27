@@ -92,6 +92,7 @@ $open_usuarios   = nav_open(['/usuarios/']);
 
 $active_config_series        = nav_active(['/config/facturacion_series.php', '/config/facturacion_series']);
 $active_config_remi_series   = nav_active(['/config/remision_series.php', '/config/remision_series']);
+$active_config_empresa       = nav_active(['/config/empresa.php', '/config/empresa']);
 $open_configuracion          = nav_open(['/config/']);
 
 ?>
@@ -351,6 +352,13 @@ $open_configuracion          = nav_open(['/config/']);
               <a href="../config/remision_series.php" class="nav-link <?php echo $active_config_remi_series; ?>">
                 <i class="nav-icon bi <?php echo $circle; ?>"></i>
                 <p>Remisiones / Series</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <?php $circle = nav_circle($active_config_empresa); ?>
+              <a href="../config/empresa.php" class="nav-link <?php echo $active_config_empresa; ?>">
+                <i class="nav-icon bi <?php echo $circle; ?>"></i>
+                <p>Empresa</p>
               </a>
             </li>
           </ul>
